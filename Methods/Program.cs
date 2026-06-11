@@ -8,17 +8,43 @@
 //}
 
 
-string name = ConsoleMessages.GetUsersName();
-ConsoleMessages.SayHi(name);
+//string name = ConsoleMessages.GetUsersName();
+//ConsoleMessages.SayHi(name);
 
-double result = MathShortcuts.Add(5, 3);
-Console.WriteLine($"The results is {result}");
-//or Console.WriteLine($"The results is { MathShortcuts.Add(5, 3) }"); 
+//double result = MathShortcuts.Add(5, 3);
+//Console.WriteLine($"The results is {result}");
+////or Console.WriteLine($"The results is { MathShortcuts.Add(5, 3) }"); 
 
-double[] vals = new double[] { 2, 5, 6, 21, 52, 98 };
-MathShortcuts.AddAll(vals);
+//double[] vals = new double[] { 2, 5, 6, 21, 52, 98 };
+//MathShortcuts.AddAll(vals);
 
-ConsoleMessages.SayGoodbye();
+//ConsoleMessages.SayGoodbye();
+
+(string firstName, string lastName) fullName = ConsoleMessages.GetFullName();
+//or var fullName = ConsoleMessages.GetFullName();
+
+Console.WriteLine($"First Name: {fullName.firstName}");
+Console.WriteLine($"Last Name: {fullName.lastName}");
+
+// or
+
+//(string firstName, string lastName) = ConsoleMessages.GetFullName();
+
+//Console.WriteLine($"First Name: {firstName}");
+//Console.WriteLine($"Last Name: {lastName}");
+
+// or
+
+//var (firstName, lastName) = ConsoleMessages.GetFullName();
+
+
+//Console.WriteLine($"First Name: {firstName}");
+//Console.WriteLine($"Last Name: {lastName}");
+
+// if you want to only get one of the variables returned use an _ (discard character)
+
+(string firstName, _) = ConsoleMessages.GetFullName();
+Console.WriteLine($"The first name is: {firstName}");
 
 
 
