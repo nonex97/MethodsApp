@@ -7,11 +7,15 @@
 //    SampleMethods.SayHi();
 //}
 
-ConsoleMessages.SayHi();
 
-Console.WriteLine("This is Neven.");
+Console.Write("What is your name: ");
+string name = Console.ReadLine(); // the variable here doens't need to be the same name as in the method
+ConsoleMessages.SayHi(name);
 
-//ConsoleMessages.SayHi();
+MathShortcuts.Add(5, 3);
+
+double[] vals = new double[] { 2, 5, 6, 21, 52, 98 };
+MathShortcuts.AddAll(vals);
 
 ConsoleMessages.SayGoodbye();
 
