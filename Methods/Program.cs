@@ -11,7 +11,9 @@ ConsoleMessages.SayHi();
 
 Console.WriteLine("This is Neven.");
 
-ConsoleMessages.SayHi();
+//ConsoleMessages.SayHi();
+
+ConsoleMessages.SayGoodbye();
 
 // or (could appear in code but not recommended to use)
 
@@ -22,3 +24,9 @@ ConsoleMessages.SayHi();
 
 //using static System.Console;
 //WriteLine();
+
+// DRY - Don't Repeat Yourself -> (don't repeat logic...), having a method helps you easily change the code that is called multiple times in one go
+// (instead of looking for each copy of it)
+
+// SOLID - S -> SRP -> Single Responsibility Principle -> each thing should only do one thing
+// e.g. Program.cs is just calling methods (like a QB calling the play)

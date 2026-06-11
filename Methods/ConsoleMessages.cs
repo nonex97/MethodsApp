@@ -8,7 +8,14 @@ namespace Methods
 		public static void SayHi()
 		{
             Console.WriteLine("Hello User!");
-            Console.WriteLine("I hope you're having a good day!");
+            Console.WriteLine("I hope you're having a good day.");
+		}
+
+		public static void SayGoodbye()
+		{
+			Console.WriteLine("Goodbye, my user.");
+            Console.WriteLine("Thank you for visiting.");
+            Console.WriteLine("I cannot wait to see you again.");
 		}
 	}
 }
