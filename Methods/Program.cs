@@ -8,16 +8,19 @@
 //}
 
 
-Console.Write("What is your name: ");
-string name = Console.ReadLine(); // the variable here doens't need to be the same name as in the method
+string name = ConsoleMessages.GetUsersName();
 ConsoleMessages.SayHi(name);
 
-MathShortcuts.Add(5, 3);
+double result = MathShortcuts.Add(5, 3);
+Console.WriteLine($"The results is {result}");
+//or Console.WriteLine($"The results is { MathShortcuts.Add(5, 3) }"); 
 
 double[] vals = new double[] { 2, 5, 6, 21, 52, 98 };
 MathShortcuts.AddAll(vals);
 
 ConsoleMessages.SayGoodbye();
+
+
 
 // or (could appear in code but not recommended to use)
 

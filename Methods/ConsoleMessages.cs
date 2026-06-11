@@ -17,6 +17,14 @@ namespace Methods
             Console.WriteLine("Thank you for visiting.");
             Console.WriteLine("I cannot wait to see you again.");
         }
+
+        public static string GetUsersName() // string instead of void since we want to return a value 
+        {
+            Console.Write("What is your name: ");
+            string name = Console.ReadLine();
+
+            return name;
+        }
     }
 }
 
